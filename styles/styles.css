@@ -136,7 +136,7 @@ body {
 /* HeroSection */
 
 .container-main {
-  background-image: url(/images/backgroundimage.jpg);
+  background-image: url(./images/backgroundimage.jpg);
   background-color: #757575;
   background-blend-mode: multiply;
   background-position: center;
