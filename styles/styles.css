@@ -18,33 +18,30 @@ body {
 .unstyled-list {
   list-style: none;
 }
-
-.icon-item:hover {
-  fill: #ffffff;
-  background-color: #2196f3;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
+.icon-item-header a:hover {
+  color: #2196f3;
+  stroke: #2196f3;
+}
+.navigation-item:hover {
+  color: #2196f3;
 }
 .item-svg:hover {
   fill: #ffffff;
-  cursor: pointer;
 }
+.svg-footer-item:hover,
+.icon-item:hover {
+  cursor: pointer;
+  background-color: #2196f3;
+}
+
 .item-svg-customer:hover {
   fill: #2196f3;
   cursor: pointer;
 }
-.svg-footer-item:hover {
-  background-color: #2196f3;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.customer-item:hover {
+  border-color: #2196f3;
+  fill: #2196f3;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
 }
 
 /*HeaderSection*/
@@ -80,11 +77,6 @@ body {
   text-decoration: none;
 }
 
-.navigation-item:hover {
-  color: #2196f3;
-  cursor: pointer;
-}
-
 .title {
   font-family: "Raleway";
   font-style: normal;
@@ -117,17 +109,18 @@ body {
 }
 .right-item {
   color: #757575;
-}
-.right-navigation-list-inside {
   display: flex;
+  flex-direction: row-reverse;
   gap: 10px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
+
 .icon-item-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .head-section {
   width: 100%;
@@ -295,7 +288,6 @@ body {
 }
 .sm-icons {
   display: flex;
-  justify-content: center;
   padding-top: 16px;
 }
 .sm-icons ul {
@@ -307,11 +299,14 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  align-items: center;
+
+  justify-content: center;
 }
 
 .icon-item a {
+  display: flex;
   color: #afb1b8;
-  justify-content: center;
 }
 .team.icons {
   display: flex;
